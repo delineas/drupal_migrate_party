@@ -1,0 +1,34 @@
+id: books_reviews
+label: Books Reviews
+#migration_group: custom
+
+source:
+  plugin: csv
+  path: modules/custom/drupal_migrate_party/data/books_reviews.csv
+  header_row_count: 1
+  delimiter: ,
+  enclosure: '"'
+  keys:
+    - book_id
+
+destination:
+  plugin: entity:node
+
+process:
+  type:
+    plugin: default_value
+    default_value: book_review
+  title: book
+  field_author_name:
+    plugin: concat
+    source:
+      - first_name
+      - last_name
+    delimiter: ' '
+  'body/value': review
+  'body/format': 
+    plugin: default_value
+    default_value: full_html
+  uid:
+    plugin: default_value
+    default_value: 1

@@ -1,0 +1,14 @@
+{
+  "name": "drupal/drupal_migrate_party",
+  "type": "drupal-module",
+  "description": "Drupal 8 Migrate Example",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/drupal_migrate_party",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/drupal_migrate_party",
+    "source": "http://cgit.drupalcode.org/drupal_migrate_party"
+  },
+  "require": { }
+}

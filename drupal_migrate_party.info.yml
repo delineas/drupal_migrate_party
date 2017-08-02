@@ -1,0 +1,13 @@
+name: Drupal Migrate Party
+type: module
+description: Drupal 8 Migrate Example
+core: 8.x
+package: Custom
+dependencies:
+  - migrate_source_csv
+  - migrate_plus
+  - migrate_tools
+  - config_devel
+#config_devel:
+# install:
+#   - migrate_plus.migration.profile_books
