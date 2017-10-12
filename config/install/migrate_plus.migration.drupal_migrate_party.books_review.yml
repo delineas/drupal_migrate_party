@@ -1,6 +1,5 @@
 id: books_reviews
 label: Books Reviews
-#migration_group: custom
 
 source:
   plugin: csv
@@ -9,7 +8,7 @@ source:
   delimiter: ,
   enclosure: '"'
   keys:
-    - book_id
+    - isbn
 
 destination:
   plugin: entity:node

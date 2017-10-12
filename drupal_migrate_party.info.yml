@@ -8,6 +8,6 @@ dependencies:
   - migrate_plus
   - migrate_tools
   - config_devel
-#config_devel:
-# install:
-#   - migrate_plus.migration.profile_books
+config_devel:
+ install:
+   - migrate_plus.migration.drupal_migrate_party.books_review
