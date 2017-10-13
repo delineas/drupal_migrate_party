@@ -18,6 +18,7 @@ process:
     plugin: default_value
     default_value: book_review
   title: book
+  field_isbn: isbn
   field_author_name:
     plugin: concat
     source:
